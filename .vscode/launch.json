@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "args": [
+                "suppression:add-to-group",
+                "--sendgridToken=<token>",
+                "--groupId=<groupId>",
+                "--csvFile=<file>"
+            ],
+            "name": "run file",
+            "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+            "program": "${workspaceFolder}/dist/bin/console.js",
+            "request": "launch",
+            "skipFiles": ["<node_internals>/**"],
+            "sourceMaps": true,
+            "type": "node",
+        }
+    ]
+}
