@@ -5,15 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "args": [
-                "suppression:add-to-group",
-                "--sendgridToken=<token>",
-                "--groupId=<groupId>",
-                "--csvFile=<file>"
-            ],
+            "args": [],
             "name": "run file",
             "outFiles": ["${workspaceFolder}/dist/**/*.js"],
-            "program": "${workspaceFolder}/dist/bin/console.js",
+            "program": "${workspaceFolder}/dist/index.js",
             "request": "launch",
             "skipFiles": ["<node_internals>/**"],
             "sourceMaps": true,
