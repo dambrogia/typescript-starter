@@ -5,6 +5,9 @@
         "lint": "eslint ./src",
         "console": "node dist/bin/console.js"
     },
+    "imports": {
+        "#src/*": "./dist/*.js"
+    },
     "devDependencies": {
         "@eslint/js": "^9.10.0",
         "@types/eslint__js": "^8.42.3",
